@@ -1,7 +1,11 @@
-export default function Descr() {
+import Status from "./Status";
+import TaskList from "./TaskList";
+
+export default function Descr(props) {
     return (
-        <div>
-            <p className="text-sm text-center text-slate-700">No tasks yet. Add one above!</p>
+        <div className="">
+            <Status />
+            <TaskList tasks={props.tasks} />
         </div>
     );
 }
