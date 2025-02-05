@@ -13,13 +13,11 @@ const TaskList = (props) => {
                                 <input type="checkbox" className="w-[20px] h-[20px]"/>
                                 <div>{task.title}</div>
                             </div>
-                            <button className="bg-red-50 h-[30px] text-red-500 px-[16px] rounded-lg focus:bg-blue-500 focus:text-white">Delete</button>
+                            <button className="bg-red-50 h-[30px] text-red-500 px-[16px] rounded-lg focus:bg-blue-500 focus:text-white" onClick={onDelete}>Delete</button>
                         </div>
                     )
                 })}
             </div>
-
-
         )
     }
 }
