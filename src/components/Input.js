@@ -5,11 +5,11 @@ export default function Input(props) {
     const origin = ""
     const onChange = (event) => {
         setInputValue(event.target.value)
-        console.log(event.target)
+        // console.log(event.target)
     }
     const onSubmit = () => {
         props.setTasks((prevTasks) => {
-            return [...prevTasks, {title: inputValue}]
+            return [{title: inputValue, isComplete: false},...prevTasks]
         })
         setInputValue(origin)
 
