@@ -5,8 +5,8 @@ export default function Descr(props) {
     console.log(props.tasks, "descr props")
     return (
         <div className="">
-            <Status />
-            <TaskList tasks={props.tasks} setTask = {props.setTasks}/>
+            <Status tasks={props.tasks} setTasks={props.setTasks} />
+            <TaskList tasks={props.tasks} setTasks={props.setTasks} />
         </div>
     );
 }
